@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    font-family: Poppins;
+    min-height: 100vh;
+    background:linear-gradient(45deg,#bf8ece,#67879d);
+}
+
+.container{
+    width: 500px;
+    background-color: #fff5;
+    max-width: 100vw;
+    margin: 30px auto;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.form{
+    background-color: #fff;
+    border-radius: inherit;
+    padding: inherit;
+}
+
+.form h3{
+    margin: 0;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+}
+
+.form form{
+    display: grid;
+    grid-template-columns: 1fr 60px;
+    gap: 40px;
+}
+
+.form form textarea{
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: Poppins;
+    font-size: small;
+    font-size: 1.2rem;
+}
+
+.form form button{
+    background-color: #0d0112;
+    color: #eee;
+    font-family: Poppins;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.list li .complete-icon svg{
+    width: 20px;
+}
+
+.list li .close-icon svg{
+    width: 20px;
+}
+
+.list li{
+    background-color: #fff;
+    margin-top: 10px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    gap: 30px;
+    text-align: left;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.list li .complete-icon,
+.list li .close-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.list li.complete{
+    opacity: 0.5;
+
+}
+
+.list li.complete .complete-icon svg{
+    color: green;
+}
